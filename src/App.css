@@ -1,38 +1,136 @@
-.App {
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ECF0F1; /* Light gray background */
+}
+
+/* Table Styles */
+#crud-table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#crud-caption {
+  text-align: left;
+  padding: 15px;
+  font-size: 1.5em;
+  background-color: #1ABC9C; /* Turquoise accent */
+  color: white;
+  font-weight: bold;
+}
+
+#add-btn {
+  background-color: #2C3E50;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  /* border: white; */
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* #add-btn:hover {
+  background-color: #16A085
+} */
+
+.table-header {
+  background-color: #2C3E50; /* Dark blue/gray header */
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.table-row {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table-data {
+  padding: 16px;
+  border: 1px solid #ddd;
+  color: #34495E; /* Dark gray text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-row:nth-child(even) {
+  background-color: #F8F9F9; /* Light gray for alternating rows */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.table-row:hover {
+  background-color: #BDC3C7; /* Light blue-gray highlight */
+}
+
+/* Button Styles */
+.action-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.update-btn {
+  background-color: #1ABC9C; /* Turquoise for update */
   color: white;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.update-btn:hover {
+  background-color: #16A085; /* Darker turquoise */
+  transform: translateY(-3px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-btn {
+  background-color: #E74C3C; /* Bright red for delete */
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #C0392B; /* Darker red on hover */
+  transform: translateY(-3px);
+}
+
+.add-btn {
+  background-color: #1ABC9C;
+  color: white;
+
+}
+
+.add-btn:hover {
+  background-color: #16A085;
+}
+
+/* Form Styles */
+.form-container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.input-field {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #BDC3C7;
+  border-radius: 8px;
+}
+
+#add-title, #update-title {
+  text-align: center;
+  color: #2C3E50; /* Dark blue-gray for headings */
+  margin: 20px 0;
+  font-size: 1.8em;
+  font-weight: bold;
 }
